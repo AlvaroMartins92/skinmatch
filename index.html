@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Descubra o Melhor Produto para Sua Pele!</h2>
+        <form id="quizForm">
+            <label>Qual seu tipo de pele?</label><br>
+            <select id="pele">
+                <option value="oleosa">Oleosa</option>
+                <option value="seca">Seca</option>
+                <option value="mista">Mista</option>
+                <option value="sensivel">Sensível</option>
+            </select><br><br>
+
+            <label>Qual sua principal preocupação?</label><br>
+            <select id="problema">
+                <option value="acne">Acne</option>
+                <option value="rugas">Rugas</option>
+                <option value="manchas">Manchas</option>
+            </select><br><br>
+
+            <button type="button" onclick="gerarLink()">Ver Produto</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
